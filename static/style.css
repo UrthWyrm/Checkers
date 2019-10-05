@@ -1,0 +1,70 @@
+.wrapper {
+    width: auto;
+    height: auto;
+    margin: auto;
+    background: black;
+}
+.container {
+    width: auto;
+    height: 1500px;
+    margin: auto;
+}
+.grid {
+    margin: 0 auto;
+    width: 110vw;
+    max-width: 90vh;
+    height: 110vw;
+    max-height: 90vh;
+    font-size: 1rem;
+}
+.row {
+    display: flex;
+}
+.box {
+    background: tomato;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    flex: 1 0 auto;
+    position: relative;
+}
+.box2 {
+    background:rgb(98, 172, 206);
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    flex: 1 0 auto;
+    position: relative;
+}
+.box:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
+}
+.box .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
+}
+.box2 .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
